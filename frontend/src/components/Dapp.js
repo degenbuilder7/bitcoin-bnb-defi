@@ -5,8 +5,7 @@ import { ethers } from "ethers";
 
 // We import the contract's artifacts and address here, as we are going to be
 // using them with ethers
-import TokenArtifact from "../contracts/Token.json";
-import contractAddress from "../contracts/contract-address.json";
+import TokenArtifact from "../artifacts/Tokens.json";
 
 // All the logic of this dapp is contained in the Dapp component.
 // These other components are just presentational ones: they don't have any
@@ -24,6 +23,8 @@ const HARDHAT_NETWORK_ID = '31337';
 
 // This is an error code that indicates that the user canceled a transaction
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
+
+const contractAddress ="0x2";
 
 // This component is in charge of doing these things:
 //   1. It connects to the user's wallet
@@ -85,6 +86,7 @@ export class Dapp extends React.Component {
     if (!this.state.tokenData || !this.state.balance) {
       return <Loading />;
     }
+
 
     // If everything is loaded, we render the application.
     return (
