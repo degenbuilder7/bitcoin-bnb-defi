@@ -10,6 +10,8 @@ This project involves developing a decentralized lending/borrowing platform leve
 
 2. **Lending/Borrowing Smart Contracts**: These contracts will manage the lending and borrowing operations, ensuring seamless cross-chain transactions.
 
+https://github.com/degenbuilder7/bitcoin-bnb-defi/blob/master/contracts/CrossChainDefi.sol
+
 3. **User Interface**: A user-friendly interface for users to interact with the platform, including functionalities for lending, borrowing, and repaying assets.
 
 ### Bitcoin Oracle Contract Overview
