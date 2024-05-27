@@ -5,11 +5,9 @@ import { ethers } from "ethers";
 
 // We import the contract's artifacts and address here, as we are going to be
 // using them with ethers
-import TokenArtifact from "../artifacts/Tokens.json";
+import TokenArtifact from "../build/Token.json";
 
 // All the logic of this dapp is contained in the Dapp component.
-// These other components are just presentational ones: they don't have any
-// logic. They just render HTML.
 import { NoWalletDetected } from "./NoWalletDetected";
 import { ConnectWallet } from "./ConnectWallet";
 import { Loading } from "./Loading";
@@ -31,11 +29,7 @@ const contractAddress ="0x2";
 //   2. Initializes ethers and the Token contract
 //   3. Polls the user balance to keep it updated.
 //   4. Transfers tokens by sending transactions
-//   5. Renders the whole application
-//
-// Note that (3) and (4) are specific of this sample application, but they show
-// you how to keep your Dapp and contract's state in sync,  and how to send a
-// transaction.
+
 export class Dapp extends React.Component {
   constructor(props) {
     super(props);
